@@ -1,15 +1,15 @@
-title: "Grace Vayisiriria"
-baseline: "Développeur Etudiant passionné"
-description: "Développeur passionnée par la technologie, les projets innovants et le partage de connaissances."
+title: "Jonathan Bayikehya"
+baseline: "Développeur Étudiant passionné"
+description: "Développeur passionné par la technologie, les projets innovants et le partage de connaissances."
 
 params:
-  author: "Grace VayisiririaBlog"
-  github: "https://github.com/gracevayisiriria"
-  email: "grace@example.com"
+  author: "Jonathan Bayikehya"
+  github: "https://github.com/Jonathanbayikehya"
+  email: "jonathanbayikehya1960@gmail.com"
   social:
     - name: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/gracevayisiriria"
+      url: "https://github.com/Jonathanbayikehya"
     - name: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "#"
