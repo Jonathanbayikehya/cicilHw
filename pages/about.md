@@ -1,13 +1,9 @@
 ---
-title: "contacts"
+title: "Contact"
 menu:
   main:
     weight: 999
 ---
----
----
-
-
 ---
 
 <section class="hero">
@@ -15,7 +11,7 @@ menu:
     <div class="hero-content">
       <div class="hero-text">
         <span class="greeting">👋 Salut, moi c'est</span>
-        <h1><strong>Grace Vayisiriria </strong></h1>
+        <h1><strong>Jonathan Bayikehya</strong></h1>
         <p class="tagline">Développeur passionné par la technologie, les projets innovants et le partage de connaissances.</p>
         <div class="hero-buttons">
           <a href="#projets" class="btn btn-primary">Voir mes projets</a>
@@ -36,7 +32,7 @@ menu:
     <h2>À propos de moi</h2>
     <div class="about-content">
       <div class="about-text">
-        <p>Je suis un etudiant developpeur, passionnée par la création de solutions numériques innovantes. Mon parcours m'a permis de travailler sur divers projets allant du développement web aux applications mobiles.</p>
+        <p>Je suis Jonathan Bayikehya, étudiant développeur passionné par la création de solutions numériques innovantes. Mon parcours m'a permis de travailler sur divers projets allant du développement web aux applications mobiles.</p>
         
         <div class="skills">
           <h3>Compétences</h3>
@@ -131,11 +127,11 @@ menu:
     <h2>Travaillons ensemble</h2>
     <p>Vous avez un projet en tête ? N'hésitez pas à me contacter !</p>
     <div class="cta-buttons">
-      <a href="mailto:grace@example.com" class="btn btn-primary">
+      <a href="mailto:jonathanbayikehya1960@gmail.com" class="btn btn-primary">
         <i class="fas fa-envelope"></i>
         M'envoyer un email
       </a>
-      <a href="https://github.com/gracevayisiriria" class="btn btn-secondary" target="_blank">
+      <a href="https://github.com/Jonathanbayikehya" class="btn btn-secondary" target="_blank">
         <i class="fab fa-github"></i>
         Voir mon GitHub
       </a>
@@ -145,13 +141,13 @@ menu:
 
 <style>
 :root {
-  --primary: #6C63FF;
-  --secondary: #4A44C6;
-  --accent: #FF6584;
-  --dark: #2A2D3E;
-  --light: #F7F9FC;
-  --text: #333333;
-  --text-light: #6C757D;
+  --primary: #2563eb;      /* Bleu professionnel moderne */
+  --secondary: #1e40af;    /* Bleu foncé élégant */
+  --accent: #f59e0b;       /* Orange chaleureux pour les accents */
+  --dark: #1e293b;         /* Gris bleu foncé sophistiqué */
+  --light: #f8fafc;        /* Gris très clair pour le fond */
+  --text: #334155;         /* Gris foncé lisible */
+  --text-light: #64748b;   /* Gris moyen */
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
 }
@@ -179,7 +175,7 @@ body {
 /* Hero Section */
 .hero {
   padding: 120px 0 80px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   color: white;
   text-align: center;
 }
@@ -199,6 +195,7 @@ body {
   font-size: 1.2rem;
   margin-bottom: 10px;
   display: block;
+  opacity: 0.9;
 }
 
 .hero h1 {
@@ -241,6 +238,7 @@ body {
   background: transparent;
   border-color: var(--accent);
   transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
 }
 
 .btn-secondary {
@@ -265,6 +263,12 @@ body {
   justify-content: center;
   font-size: 4rem;
   border: 4px solid rgba(255, 255, 255, 0.2);
+  transition: var(--transition);
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 /* Sections communes */
@@ -277,6 +281,17 @@ h2 {
   font-size: 2.5rem;
   margin-bottom: 50px;
   color: var(--dark);
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--accent);
+  margin: 15px auto;
+  border-radius: 2px;
 }
 
 /* About Section */
@@ -294,6 +309,7 @@ h2 {
   font-size: 1.1rem;
   margin-bottom: 30px;
   color: var(--text-light);
+  line-height: 1.7;
 }
 
 .skills h3 {
@@ -314,10 +330,21 @@ h2 {
   border-radius: 20px;
   font-size: 0.9rem;
   color: var(--primary);
-  border: 1px solid #e0e0e0;
+  border: 1px solid #e2e8f0;
+  transition: var(--transition);
+}
+
+.skill-tag:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
 }
 
 /* Projects Section */
+.projects {
+  background: var(--light);
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -331,11 +358,13 @@ h2 {
   box-shadow: var(--shadow);
   transition: var(--transition);
   text-align: center;
+  border: 1px solid #f1f5f9;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary);
 }
 
 .project-icon {
@@ -352,6 +381,7 @@ h2 {
 .project-card p {
   color: var(--text-light);
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .project-tech {
@@ -367,11 +397,12 @@ h2 {
   border-radius: 15px;
   font-size: 0.8rem;
   color: var(--primary);
+  border: 1px solid #e2e8f0;
 }
 
 /* Values Section */
 .values {
-  background: var(--light);
+  background: white;
 }
 
 .values-grid {
@@ -381,16 +412,19 @@ h2 {
 }
 
 .value-card {
-  background: white;
+  background: var(--light);
   padding: 40px 30px;
   border-radius: 15px;
   text-align: center;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  border: 1px solid #f1f5f9;
 }
 
 .value-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  background: white;
 }
 
 .value-card i {
@@ -406,6 +440,7 @@ h2 {
 
 .value-card p {
   color: var(--text-light);
+  line-height: 1.6;
 }
 
 /* CTA Section */
@@ -417,6 +452,10 @@ h2 {
 
 .cta h2 {
   color: white;
+}
+
+.cta h2::after {
+  background: var(--accent);
 }
 
 .cta p {
@@ -455,6 +494,34 @@ h2 {
     width: 200px;
     justify-content: center;
   }
+  
+  .hero-content {
+    gap: 30px;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 
@@ -476,11 +543,25 @@ document.addEventListener('DOMContentLoaded', function() {
   }, observerOptions);
 
   // Animer les éléments au scroll
-  document.querySelectorAll('.project-card, .value-card').forEach(el => {
+  document.querySelectorAll('.project-card, .value-card, .skill-tag').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
+  });
+
+  // Navigation fluide
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
   });
 });
 </script>
